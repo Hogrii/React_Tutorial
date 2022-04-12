@@ -1,12 +1,5 @@
 import { Board } from './Board';
 import React, { useState } from 'react';
-/* eslint-disable */
-
-// interface GameProps {
-//   history: { squares: string[] }[];
-//   stepNumber: number;
-//   xIsNext: boolean;
-// }
 
 export function Game() {
   const [historyState, setHistory] = useState<{ squares: string[] }[]>([
@@ -29,18 +22,6 @@ export function Game() {
       return;
     }
     squares[i] = xIsNext ? 'X' : 'O';
-    /*
-    this.setState({
-      // 턴이 지날때마다 배열에 추가하기 위해 concat()을 사용
-      // push()는 기존 배열에 영향을 미치지만 concat()은 영향을 미치지 않는다.
-      history: history.concat([{
-        squares: squares,
-      }]),
-      // 사각형을 누르면 +1
-      stepNumber: history.length,
-      xIsNext: !state.xIsNext,
-    });
-    */
 
     setHistory(history.concat([{ squares: squares }]));
     setStepNumber(history.length);
@@ -49,12 +30,6 @@ export function Game() {
 
   // 턴 넘기기
   const jumpTo = (step: number) => {
-    /*
-    this.setState({
-      stepNumber: step,
-      xIsNext: (step%2) === 0,
-    });
-    */
     setStepNumber(step);
     setXIsNext(step % 2 === 0);
   };
