@@ -1,0 +1,70 @@
+{
+  "name": "react_tutorial",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.26",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "airbnb",
+      "prettier"
+    ],
+    "rules": {
+      "no-use-before-define": 0,
+      "import/prefer-default-export": 0,
+      "Prefer default export": 0,
+      "object-shorthand": 0,
+      "tobject-shorthand": 0,
+      "lines-between-class-members": 0,
+      "react/destructuring-assignment": 0,
+      "import/order": 0,
+      "import/no-unresolved": 0,
+      "import/extensions": 0,
+      "react/no-access-state-in-setstate": 0,
+      "prefer-destructuring": 0,
+      "prefer-template": 0,
+      "react/button-has-type": 0,
+      "react/jsx-filename-extension": 0,
+      "react/no-array-index-key": 0,
+      "no-lonely-if": 0,
+      "no-plusplus": 0,
+      "no-unused-vars": 0,
+      "react/prefer-stateless-function": 0,
+      "react/react-in-jsx-scope": 0
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
