@@ -11,7 +11,6 @@
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "5.0.0",
@@ -27,9 +26,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "airbnb",
-      "prettier"
+      "react-app/jest"
     ],
     "rules": {
       "no-use-before-define": 0,
